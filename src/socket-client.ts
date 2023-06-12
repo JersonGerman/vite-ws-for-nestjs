@@ -4,7 +4,7 @@ let socket: Socket;
 
 export const connectToServer = ( token: string) => {
 
-    const manager = new Manager("http://test-shop-nestjs.fly.dev/socket.io/socket.io.js", {
+    const manager = new Manager("https://test-shop-nestjs.fly.dev/socket.io/socket.io.js", {
         extraHeaders: {
             hola: "mundo",
             authentication: token
